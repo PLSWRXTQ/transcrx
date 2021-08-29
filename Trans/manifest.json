@@ -1,0 +1,29 @@
+{
+	"manifest_version": 2,
+	"name": "Trans",
+	"version": "1.0.0",
+	"description": "脚本接口通信 Chrome 扩展",
+	"icons":
+	{
+		"16": "img/favicon.bmp",
+		"48": "img/favicon.bmp",
+		"128": "img/favicon.bmp"
+	},
+	"background":
+	{
+		"scripts": ["background.js"]
+	},
+	"browser_action": 
+	{
+		"default_icon": "img/favicon.bmp",
+		"default_title": "Trans - 脚本接口通信",
+		"default_popup": "popup.html"
+	},
+	"permissions":
+	[
+		"contextMenus",
+		"webRequest", 
+		"webRequestBlocking"
+	],
+	"homepage_url": "http://192.168.31.200:1024"
+}
